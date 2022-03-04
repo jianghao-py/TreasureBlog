@@ -85,6 +85,22 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 
 - ```<html></html>: <html>```元素。这个元素包裹了整个完整的页面，是一个根元素
 - ```<head></head>: <head>```元素。 这个元素是一个容器，它包含了所有你想包含在HTML页面中但不想在HTML页面中显示的内容。这些内容包括你想在搜索结果中出现的关键字和页面描述，CSS样式，字符集声明等等
+
+```html
+<head>
+<title>Title of the document</title>
+<base href="http://www.w3school.com.cn/images/" />
+<base target="_blank" />
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+<meta name="keywords" content="HTML, CSS, XML" />
+
+<style type="text/css">
+  body {background-color:yellow}
+  p {color:blue}
+</style>
+</head>
+ ```
+
 - ```<meta>``` 标签提供了 HTML 文档的元数据。元数据不会显示在客户端，但是会被浏览器解析。META元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者及其他元数据。
 
 ```html
@@ -97,6 +113,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
  ```
 
  - ```<title></title>```: 是一项元数据，用于设置页面标题，出现在浏览器标签上
+ - ```<link>```： 标签定义文档与外部资源之间的关系
+ - ```<base>```： 标签为页面上的所有链接规定默认地址或默认目标（target）：
  - ```<body></body>```:包含了你访问页面时所有显示在页面上的内容，文本，图片，音频，游戏等等
 
 <br>
@@ -159,6 +177,22 @@ This is a paragraph
 ```html
 <!-- <script>：放在文档的尾部，这样可以确保在加载脚本之前浏览器已经解析了HTML内容（如果脚本加载某个不存在的元素，浏览器会报错） -->
 <script src="my-js-file.js"></script>
+ ```
+
+2. 内部嵌入
+
+```html
+<script type="text/javascript">
+  alert("Hello");   
+</script>
+ ```
+
+3. 行内引入
+
+```html
+<script type="text/javascript">
+  <input type="button" value="Hello" onclick="alert('world')"> 
+</script>
  ```
 
 
