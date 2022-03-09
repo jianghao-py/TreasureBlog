@@ -18,7 +18,7 @@
 - 不会独占一行，只占自身的大小
 - 自左向右水平排列
 - 默认高度和宽度都是被内容撑开
-- 元素的高度、宽度及顶部底部边距不可设置 (内联元素的顶部底部边距margin-top及margin-bottom属性不起作用，而margin-left及margin-right属性可以起作用。padding属性top、bottom、left、right也可起作用)
+- 元素的高度、宽度及顶部底部边距不可设置 (内联元素的顶部底部边距margin-top及margin-bottom属性不起作用，而margin-left及margin-right属性可以起作用。padding属性top、bottom、left、right也可起作用。**垂直方向的padding、margin、border不影响页面的布局**)
 
 **注意**：当行内元素之间有“回车”、“tab”、“空格”时就会出现间隙
 
