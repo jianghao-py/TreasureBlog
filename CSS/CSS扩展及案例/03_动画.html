@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 134px;
+            height: 130px;
+            margin: 0 auto;
+            background-image: url('../img/trump.png');
+            background-repeat: no-repeat;
+            animation: run 2s steps(6),run2 2s 2s steps(6) ,run3 2s 4s steps(6),run4 2s 6s steps(6);
+        }
+
+        @keyframes run {
+            /* 第一行 */
+            from{
+                background-position: 0 0;
+            }
+
+            to{
+                background-position: -801px 0;
+            }
+        }
+
+
+        @keyframes run2 {
+            /* 第二行 */
+            from{
+                background-position: 0 -130px;
+            }
+
+            to{
+                background-position: -801px -130px;
+            }
+        }
+
+
+        @keyframes run3 {
+            /* 第三行 */
+            from{
+                background-position: 0 -260px;
+            }
+
+            to{
+                background-position: -801px -260px;
+            }
+        }
+
+
+        @keyframes run4 {
+            /* 第四行 */
+            from{
+                background-position: 0 -390px;
+            }
+
+            to{
+                background-position: -801px -390px;
+            }
+        }
+
+        @keyframes run5{
+            /* 第四行 */
+            from{
+                background-position: 0 -390px;
+            }
+
+            to{
+                background-position: 0 0;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
