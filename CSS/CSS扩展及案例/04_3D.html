@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 必须添加给translateZ的父盒子 */
+        .box-outer{
+           perspective: 800px;
+        }
+
+        .box-outer{
+            width: 400px;
+            height: 400px;
+            background-color: yellowgreen;
+            margin: 0 auto;
+            border: 1px solid transparent;
+            
+        }
+
+        .box-outer .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 20px auto;
+            transition: all 2s;
+            
+        }
+
+        .box-outer:hover .box{
+            /* transform: rotateY(180deg) rotateX(90deg) rotateZ(45deg); */
+            transform: translate3d(50px,50px,300px);
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-outer">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>
