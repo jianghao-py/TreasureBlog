@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            perspective: 800px;
+        }
+
+        .heros{
+        
+            width: 200px;
+            height: 200px;
+            margin: 80px auto;
+            transform-style: preserve-3d;
+            transform: rotateX(45deg) rotateZ(45deg);
+            animation: identifier 15s infinite linear;
+        }
+
+        .heros > div{
+            width: 200px;
+            height: 200px;
+            opacity: 0.8;
+            /* 将图片重合 */
+            position: absolute;
+        }
+
+        .box1{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .box2{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .box3{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .box4{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .box5{
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+        .box6{
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        @keyframes identifier {
+            from{
+                transform: rotateX(0) rotateZ(0);
+            }
+
+            to{
+                transform: rotateX(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heros">
+
+        <div class="box1">
+            <img src="../img/hero1.jpg" alt="">
+        </div>
+
+        <div class="box2">
+            <img src="../img/hero2.jpg" alt="">
+        </div>
+
+        <div class="box3">
+            <img src="../img/hero3.jpg" alt="">
+        </div>
+
+        <div class="box4">
+            <img src="../img/hero4.jpg" alt="">
+        </div>
+
+        <div class="box5">
+            <img src="../img/hero5.jpg" alt="">
+        </div>
+
+        <div class="box6">
+            <img src="../img/hero6.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
