@@ -10,12 +10,16 @@ BFC是 CSS中隐含的属性
 
 <br>
 
+<br>
+
 **开启BFC的方式：**
 
 1. float浮动
 2. overflow: 非visible
 3. 设置元素绝对定位 position: absolute;
 4. 设置元素display为inline-block
+
+<br>
 
 <br>
 

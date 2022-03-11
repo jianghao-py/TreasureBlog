@@ -5,6 +5,8 @@
 
 <br>
 
+<br>
+
 ### 弹性容器
 
 通过display设置弹性容器
@@ -12,6 +14,8 @@
 1. display: flex; ------> 块级弹性容器
 2. display: inline-flex; ------> 行内弹性容器
 
+
+<br>
 
 <br>
 
@@ -24,9 +28,12 @@
 
 <br>
 
+<br>
+
 
 ### 弹性容器的属性
 
+<br>
 
 ```css
 flex-direaction     指定容器中弹性元素的排列方式
@@ -85,6 +92,8 @@ align-content       （用于对齐弹性线）
       
 ```
 
+<br>
+
 **align-content: center**
 
 <img width="500" height="300" src="../../image/aligncontent.png">
@@ -96,8 +105,12 @@ align-content       （用于对齐弹性线）
 
 <br>
 
+<br>
+
 
 ### 弹性元素的属性
+
+<br>
 
 ```css
 flex-grow   指定元素的伸展系数 （当父元素有多余空间时，子元素如何伸展，父元素的剩余空间会按照比例分配)
