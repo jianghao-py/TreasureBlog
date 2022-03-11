@@ -12,6 +12,8 @@
 
 <br>
 
+<br>
+
 
 ### 为什么需要语义化?
 
@@ -46,6 +48,8 @@ HTML语义化就是正确的标签做正确的事情，能够便于开发者阅�
 
  <br>
 
+ <br>
+
 ### HTML5 新增input type
 
  ```html
@@ -63,6 +67,8 @@ time
 url
 week
  ```
+
+<br>
 
 <br>
 
@@ -86,6 +92,8 @@ placeholder
 required
 step
  ```
+
+<br>
 
 <br>
 
@@ -131,6 +139,8 @@ step
 
 <br>
 
+<br>
+
 ### 新的媒体元素
 
 ```<video>```	定义一个视频
@@ -140,6 +150,8 @@ step
 ```<track>```	定义在媒体播放器文本轨迹
 
 ```<audio>``` 定义一个音频
+
+<br>
 
 <br>
 
@@ -179,6 +191,8 @@ step
 
 <br>
 
+<br>
+
 
 ### 地理位置和拖放
 
@@ -207,10 +221,14 @@ function showPosition(position)
 
 <br>
 
+<br>
+
 **拖放**
 
 在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放
 
+
+<br>
 
 <br>
 
@@ -230,10 +248,13 @@ function showPosition(position)
 
 localStorage 对象存储的是没有截止日期的数据。当浏览器被关闭时数据不会被删除，在下一天、周或年中，都是可用的。
 
+<br>
 
 **sessionStorage 对象**
 
 sessionStorage 对象等同 localStorage 对象，不同之处在于只对一个 session 存储数据。如果用户关闭具体的浏览器标签页，数据也会被删除。
+
+<br>
 
 <br>
 
@@ -256,6 +277,8 @@ HTML5 引入了应用程序缓存（Application Cache），这意味着可对 we
 </html>
 ```
 
+
+<br>
 
 <br>
 
