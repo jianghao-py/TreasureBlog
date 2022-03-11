@@ -4,6 +4,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 
 <br>
 
+<br>
+
 ### 嵌套元素
 
 以把元素放到其它元素之中——这被称作嵌套
@@ -11,6 +13,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 ```html
 <p>我是<strong>最</strong>强</p>
  ```
+
+<br>
 
 <br>
 
@@ -30,6 +34,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 
 <br>
 
+<br>
+
 **块级元素**
 
 ```<div>、<p>、<h1>...<h6>、<ol>、<ul>、<dl>、<table>、<form>``` 等标签是典型的块级元素
@@ -37,6 +43,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 - 每个块状元素都从新的一行开始，并且其后的元素也另起一行（独占一行）
 - 元素的高度、宽度、行高以及顶和底边距都可设置
 - 元素宽度在不设置的情况下，占它本身父容器的100%（和父元素宽度一致）
+
+<br>
 
 <br>
 
@@ -53,11 +61,15 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 
 <br>
 
+<br>
+
 ### 空元素
 
 在 HTML 中，在空元素上使用结束标签通常是无效的。例如，在 HTML 中，在空元素上使用结束标签通常是无效的。例如，```<input type="text"></input>``` 是无效的 HTML是无效的 HTML
 
 常见的空元素：```<img> <link> <meta> <input>```
+
+<br>
 
 <br>
 
@@ -75,6 +87,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
   </body>
 </html>
  ```
+
+ <br>
 
  - ```<!DOCTYPE html>``` : 声明文档类型，目的是要告诉标准通用标记语言解析器，它应该使用什么样的文档类型定义（DTD）来解析文档
     - **声明文档的解析类型(document.compatMode)，避免浏览器的怪异模式**
@@ -123,6 +137,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 
 <br>
 
+<br>
+
 ### 特殊字符
 
 | 原义字符 | 等价字符引用 |
@@ -136,7 +152,11 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 
 <br>
 
+<br>
+
 ### 在HTML中应用CSS和JavaScript
+
+<br>
 
 **CSS**
 
@@ -172,6 +192,8 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 This is a paragraph
 </p>
 ```
+
+<br>
 
 <br>
 
