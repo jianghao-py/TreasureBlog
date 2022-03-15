@@ -138,3 +138,35 @@ for (let [key, value] of iterable) {
 // 2
 // 3
 ```
+
+<br>
+
+<br>
+
+
+### forEach()
+
+数组方法，专门用来遍历数组
+
+<br>
+
+参数：
+  - 函数作为参数
+  - 由程序员定义的函数，但是不是由程序员调用的称为回调函数（callback）
+  - 数组有多少元素，函数就会被调用几次（多次调用）
+
+<br>
+
+
+```javascript
+let arry2 = [3,4,5,6]
+
+//3   0   3,4,5,6
+//4   1   3,4,5,6
+//5   2   3,4,5,6
+//6   3   3,4,5,6
+arry2.forEach(function(ele,index,arry){
+  console.log(ele + "\t" + index + "\t" + arry); 
+})
+```
+
