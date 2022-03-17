@@ -100,6 +100,31 @@ offsetTop
 
 <br>
 
+### className 和 classList
+
+- 通过className修改会导致覆盖之前的类的
+- 可以通过classList来添加第二个类名
+- classList返回元素所有的类
+
+<br>
+
+```javascript
+box.classList.add("b1");
+box.classList.remove("b1");
+box.classList.replace("b1","b2");
+
+//用来切换一个元素的类，如果元素本身存在该类则删除，如果元素本身不存在该类则添加
+box.classList.toggle("b1");
+
+// 返回boolean，检查元素是否含有某个类
+box.classList.contain("b1");
+```
+
+
+<br>
+
+<br>
+
 
 ### 方法
 
