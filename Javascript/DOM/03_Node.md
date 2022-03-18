@@ -265,3 +265,26 @@ console.log(parent.outerHTML);
 // '<div><span></span></div>'
 ```
 
+<br>
+
+<br>
+
+### insertAdjacentHTML/Text/Element
+
+- "beforebegin" — 将 html 插入到 elem 前插入
+- "afterbegin" — 将 html 插入到 elem 开头
+- "beforeend" — 将 html 插入到 elem 末尾
+- "afterend" — 将 html 插入到 elem 后
+
+<br>
+
+```javascript
+<div id="div"></div>
+<script>
+  div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+  div.insertAdjacentHTML('afterend', '<p>Bye</p>');
+</script>
+```
+
+
+
