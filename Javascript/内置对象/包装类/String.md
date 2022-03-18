@@ -7,13 +7,7 @@
 
 <br>
 
-### 属性
 
-
-
-<br>
-
-<br>
 
 ### 方法
 
@@ -121,3 +115,96 @@ let result = str.trimStart(); //hello      l
 let str = "      hello      ";
 let result = str.trimEnd(); //l      hello
 ```
+
+<br>
+
+**includes()**：用于判断一个字符串是否包含在另一个字符串中，根据情况返回 true 或 false
+
+```javascript
+var str = 'To be, or not to be, that is the question.';
+
+console.log(str.includes('To be'));
+// true
+
+console.log(str.includes('question'));
+// true
+
+console.log(str.includes('nonexistent'));
+// false
+
+console.log(str.includes('To be', 1));
+// false
+
+console.log(str.includes('TO BE'));
+// false
+```
+
+<br>
+
+**substr()**：返回当前字符串中一个连续的片段
+
+```javascript
+var str = 'Hello world!';
+
+// 开始索引为1，截取长度为2
+str.substr(1, 2);
+// 'el'
+
+// 开始索引为 -3+10=7，截取长度为2
+str.substr(-3, 2);
+// 'or'
+
+// 开始索引为 -3+10=7，截取长度为延伸至字符结尾
+str.substr(-3);
+// 'orld!'
+
+// 开始索引为 1，截取长度为延伸至字符结尾
+str.substr(1);
+// 'Hello world!'
+
+// 开始索引为 -20+10=-10 即 0，截取长度为2
+str.substr(-20, 2);
+// 'He'
+
+// 开始索引为 20 大于字符串长度（返回空字符串），截取长度为 2
+str.substr(20, 2);
+// ''
+
+// 开始索引为 0，截取长度为 -1 和 0（返回空字符串）
+str.substr(0, -1);
+// ''
+str.substr(0, 0);
+// '' l
+```
+
+
+<br>
+
+**trimStart()**：去除后部（右边）空格
+
+```javascript
+let str = "      hello      l";
+let result = str.trimStart(); //hello      l
+```
+
+
+<br>
+
+**trimStart()**：去除后部（右边）空格
+
+```javascript
+let str = "      hello      l";
+let result = str.trimStart(); //hello      l
+```
+
+
+
+<br>
+
+**trimStart()**：去除后部（右边）空格
+
+```javascript
+let str = "      hello      l";
+let result = str.trimStart(); //hello      l
+```
+
