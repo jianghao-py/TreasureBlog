@@ -35,6 +35,20 @@ const robot = new Toy('robot', 40);
 
 <br>
 
+```javascript
+let obj = {};
+function test(){
+  this.name = "Eric";
+}
+
+
+test.call(obj);
+console.log(obj.name);
+```
+
+
+<br>
+
 <br>
 
 ### 实现一个call
