@@ -92,7 +92,7 @@ offsetTop
 
 ### innerHTML 和 innerText
 
-- innerHTML 表示标签内部的html代码，包含标签
+- innerHTML 表示标签内部的html代码，包含标签，可以识别html标签
 - innerText 表示标签内部的文本内容，不包含标签
 
 
