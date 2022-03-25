@@ -76,7 +76,7 @@ console.log(div.offsetLeft);
 
 ### scrollHeight，scrollWidth
 
-- 获取滚动区的大小
+- 获取滚动区的大小（自身实际大小）
 
 <br>
 
@@ -103,6 +103,21 @@ console.log(div.scrollTop);
 console.log(div.scrollLeft);
 div.scrollTop = 100;
 ```
+
+<br>
+
+<br>
+
+<img src="../../image/Scroll.png">
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 <br>
 

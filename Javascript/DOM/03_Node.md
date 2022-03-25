@@ -28,7 +28,7 @@ console.log(item.nodeName); // ‘LI’
 
 
 
-// Node.paretnNode，获取节点的父节点（Node）
+// Node.paretnNode，获取节点的最近父节点，包含文本（Node）
 const foo = document.querySelector('.foo');
 
 console.log(foo.parentNode); // <body>...</body>
@@ -36,7 +36,7 @@ console.log(foo.parentNode); // <body>...</body>
 
 
 
-// Node.parentElement，获取节点的父元素节点（Element）
+// Node.parentElement，获取节点的父元素节点，不包含文本（Element）
 const foo = document.querySelector('.foo');
 
 console.log(foo.parentElement); // <body>...</body>
@@ -55,7 +55,7 @@ console.log(foo.previousSibling); // #text
 // Node.previousElementSibiling，获取当前节点前面的第一个兄弟元素节点（Element）
 const foo = document.querySelector('.foo');
 
-console.log(foo.previousSibling); // <div class="bar"></div>
+console.log(foo.previousElementSibiling); // <div class="bar"></div>
 
 
 
@@ -269,7 +269,7 @@ console.log(parent.outerHTML);
 
 <br>
 
-### insertAdjacentHTML/Text/Element
+### insertAdjacentHTML / Text / Element
 
 - "beforebegin" — 将 html 插入到 elem 前插入
 - "afterbegin" — 将 html 插入到 elem 开头
