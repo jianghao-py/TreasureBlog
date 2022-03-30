@@ -1,0 +1,54 @@
+### mixin
+
+<br>
+
+1. 可以把多个组件共用的配置提取成一个混入对象
+2. 全局混入定义在```main.js```：Vue.mixin(xxx)
+3. 局部混入：mixins:["xxx"]
+4. **优先级顺序：**
+    - 当组件和混入对象含有同名选项时，这些选项将以恰当的方式进行“合并”。比如，数据对象在内部会进行递归合并，并在发生冲突时以组件数据优先
+    - 同名钩子函数将合并为一个数组，因此都将被调用，混入对象的钩子将在组件自身钩子之前调用
+    - 值为对象的选项，例如 methods、components 和 directives，将被合并为同一个对象。两个对象键名冲突时，取组件对象的键值对
+
+<br>
+
+<br>
+
+```javascript
+<!-- mixin.js -->
+export const mixin = {
+    methods:{
+        getName(){
+            alert(this.name);
+        }
+    }
+}
+```
+
+<br>
+
+```html
+<!-- School.vue -->
+<template>
+    <div id="school">
+       <h2 @click="getName">学校：{{name}}</h2>
+       <h2>地址：{{address}}</h2>
+    </div>
+</template>
+
+<script>
+import {mixin} from "../mixin"
+
+export default {
+    name:'SchoolName',
+    data(){
+        return{
+           name:"polyU",
+           address:"HK"
+        }
+    },
+    //引入mixin
+    mixins:[mixin]
+}
+</script>
+```
