@@ -1,0 +1,72 @@
+### axios.create(config)
+
+<br>
+
+- 根据指定配置创建一个新的axios, 也就是每个新axios都有自己的配置
+- 新axios只是没有取消请求和批量发请求的方法, 其它所有语法都是一致的
+
+
+<br>
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>3_axios.create方法</title>
+		<script type="text/javascript" src="./js/axios.min.js"></script>
+	</head>
+	<body>
+		
+		<button id="btn">点我获取所有人</button><br/><br/>
+		<button id="btn2">点我获取测试数据</button><br/><br/>
+		<button id="btn3">点我获取笑话信息</button><br/><br/>
+		<script type="text/javascript" >
+			const btn = document.getElementById('btn')
+			const btn2 = document.getElementById('btn2')
+			const btn3 = document.getElementById('btn3')
+
+			const axios2 = axios.create({
+				timeout:3000,
+				//headers:{name:'tom'},
+				baseURL:'https://api.apiopen.top'
+			})
+
+			//给axios配置默认属性
+			axios.defaults.timeout = 2000
+			axios.defaults.headers = {school:'atguigu'}
+			axios.defaults.baseURL = 'http://localhost:5000'
+
+			btn.onclick = ()=>{
+				axios({
+					url:'/persons', //请求地址
+					method:'GET',//请求方式
+				}).then(
+					response => {console.log('成功了',response.data);},
+					error => {console.log('失败了',error);}
+				)
+			}
+		
+			btn2.onclick = ()=>{
+				axios({
+					url:'/test1', //请求地址
+					method:'GET',//请求方式
+				}).then(
+					response => {console.log('成功了',response.data);},
+					error => {console.log('失败了',error);}
+				)
+			}
+			
+			btn3.onclick = ()=>{
+				axios2({
+					url:'/getJoke',
+					method:'GET'
+				}).then(
+					response => {console.log('成功了',response.data);},
+					error => {console.log('失败了',error);}
+				)
+			}
+		</script>
+	</body>
+</html>
+```

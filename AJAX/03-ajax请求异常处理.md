@@ -14,4 +14,8 @@ xhr.timeout = 2000;
 xhr.ontimeout = ()=>{
     // 处理函数
 }
+
+
+// 关闭请求
+xhr.abort()
 ```
