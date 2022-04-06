@@ -86,7 +86,7 @@ set.forEach((value, key) => console.log(value * 2));
 
 <br>
 
-### 基本用法
+### 基本用法 , 遍历
 
 ```javascript
 const s = new Set();
